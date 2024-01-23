@@ -3,6 +3,7 @@ package br.com.ferruje.desafiouolbackendspirng.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,13 +23,13 @@ public class UserResouce {
     @Autowired
     UserService service_user;
 
-    @GetMapping()
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<User>> getUsers() {
         return ResponseEntity.ok( service_user.findAll() );
     }
     
 
-    @PostMapping()
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> criarUsuario(@RequestBody UserDTO entity) throws Exception {
             
         return ResponseEntity.ok( service_user.createUser(entity) );
