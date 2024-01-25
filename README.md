@@ -41,10 +41,11 @@ The API provides the following endpoints:
 GET /users - Get find All users.
 ```
 
-**POST USER - SING-IN**
-````markdown
+**POST USER**
+```markdown
 POST /users - POST user in database
 ```
+**BODY**
 ```json
 {
   "name": "exemple",
