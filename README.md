@@ -28,9 +28,9 @@ obs: The database in configurated with H2DB
 
 1. Start the application with Maven
    1.1 download dependeces:
-      ```bash
-      ./mvnw clean install
-      ```
+   ```bash
+   ./mvnw clean install
+   ```
 2. The API will be accessible at http://localhost:8080
 
 ## API Endpoints
@@ -42,6 +42,9 @@ GET /users - Get find All users.
 ```
 
 **POST USER - SING-IN**
+````markdown
+POST /users - POST user in database
+```
 ```json
 {
   "name": "exemple",
@@ -50,5 +53,5 @@ GET /users - Get find All users.
   "legion": "VINGADORES",
 }
 ```
-obs: selected legoin: ```a 'VINGADORES' or 'LIGADAJUSTICA'```
+Selected legoin: ```VINGADORES``` or ```LIGADAJUSTICA```
 
