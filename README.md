@@ -21,16 +21,17 @@ git clone https://github.com/DiegoLeandro477/desafio-uol-java.git
 ```
 
 2. Install dependencies with Maven
-
-obs: The database in configurated with H2DB
+```bash
+./mvnw clean install
+```
+The database in configurated with H2DB
 
 ##  Usage
 
 1. Start the application with Maven
-   1.1 download dependeces:
-   ```bash
-   ./mvnw clean install
-   ```
+```bash
+./mvnw spring-boot:run
+```
 2. The API will be accessible at http://localhost:8080
 
 ## API Endpoints
