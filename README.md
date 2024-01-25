@@ -30,6 +30,25 @@ obs: The database in configurated with H2DB
    1.1 download dependeces:
       ```bash
       ./mvnw clean install
-      ```bash
+      ```
 2. The API will be accessible at http://localhost:8080
+
+## API Endpoints
+The API provides the following endpoints:
+
+**GET USERS**
+```markdown
+GET /users - Get find All users.
+```
+
+**POST USER - SING-IN**
+```json
+{
+  "name": "exemple",
+  "email": "exemple@gmail.com",
+  "phoneNumber": "98999999999",
+  "legion": "VINGADORES",
+}
+```
+obs: selected legoin: ```a 'VINGADORES' or 'LIGADAJUSTICA'```
 
